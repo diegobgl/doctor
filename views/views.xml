@@ -1,5 +1,26 @@
 <odoo>
   <data>
+
+   <record id="doctor_form" model="ir.ui.view">
+      <field name="name">doctor.form</field>
+      <field name="doctor.doctor"></field>
+   <field name="arch" type="xml">
+        <form string="formulario doctor">
+          <header>     </header>
+          <sheet>
+            <field name="nombre_doctor"/>
+            <field name="especialidad"/>
+
+          </sheet>
+        </form>
+
+        
+      </field>
+
+      
+    </record>
+
+    
     <!-- explicit list view definition -->
     <record model="ir.ui.view" id="doctor.list">
       <field name="name">doctor list</field>
